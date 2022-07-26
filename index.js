@@ -60,6 +60,20 @@ async function run() {
             res.send(result);
         })
 
+
+        app.patch('/tasks/:id', async (req, res) => {
+            const id = req.params.id;
+            const completed = req.body;
+            const query = { _id: ObjectId(id) };
+            const options = { upsert: true };
+            const updatedTask = {
+                $set: completed,
+            };
+            const result = await taskCollection.updateOne(query, updatedTask, options);
+            res.send(result);
+        })
+
+
         app.delete('/tasks/:id', async (req, res) => {
             const id = req.params.id;
             console.log(id);
