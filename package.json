@@ -1,11 +1,10 @@
 {
   "name": "to-do-server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node nidex.js",
-    "start-dev": "nodemon nidex.js",
+    "start": "node index.js",
+    "start-dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,5 +16,14 @@
     "express": "^4.18.1",
     "mongodb": "^4.7.0",
     "nodemon": "^2.0.18"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tauhid495/to-do-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tauhid495/to-do-server/issues"
+  },
+  "homepage": "https://github.com/tauhid495/to-do-server#readme",
+  "description": ""
 }
