@@ -95,7 +95,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send('Server 5000 is running nodemon')
+    res.send('Server 5000 is running in heroku')
 })
 
 
